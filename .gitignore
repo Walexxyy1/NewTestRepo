@@ -384,6 +384,9 @@ FodyWeavers.xsd
 !.vscode/extensions.json
 *.code-workspace
 
+BANKSOFRI-LOAN/appsettings.json
+BANKSOFRI-LOAN/appsettings.[Dd]evelopment.json
+
 # Local History for Visual Studio Code
 .history/
 

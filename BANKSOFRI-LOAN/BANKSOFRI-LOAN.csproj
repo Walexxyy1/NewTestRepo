@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>BANKSOFRI_LOAN</RootNamespace>
+    <UserSecretsId>c4edb319-e88e-48b5-9c36-01ed6ac4a38a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.28" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.28" />
+    <PackageReference Include="Hangfire.Dashboard.Basic.Authentication" Version="5.0.0" />
+    <PackageReference Include="Hangfire.Dashboard.BasicAuthorization" Version="1.0.2" />
+    <PackageReference Include="Hangfire.MemoryStorage" Version="1.7.0" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BANKSOFRI-LOAN.BUSINESSLOGIC\BANKSOFRI-LOAN.BUSINESSLOGIC.csproj" />
+    <ProjectReference Include="..\BANKSOFRI-LOAN.DATALAYER\BANKSOFRI-LOAN.DATALAYER.csproj" />
+    <ProjectReference Include="..\BANKSOFRI-LOAN.DOMAINOBJECTS\BANKSOFRI-LOAN.DOMAINOBJECTS.csproj" />
+  </ItemGroup>
+
+</Project>
